@@ -1,0 +1,493 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: darkblue;
+    font-family: 'Roboto Slab', serif;
+}
+/* -------------------------------navbar------------------------------------ */
+nav{
+    background-color: whitesmoke;
+    /* display: flex;
+    align-items: center; */
+    /*justify-content: right; */
+    padding: 10px 40px 10px 70px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav ul li.logo{
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+    color: darkblue;
+    font-family: 'Caveat', cursive;
+}
+nav ul div.items{
+    display: inline-flex;
+    padding: 0 25px;
+}
+nav ul div.items li{
+    padding: 0 20px;
+}
+nav ul div.items a{
+    text-decoration: none;
+    font-size: 18px;
+    /* padding: 0 12px; */
+    color: darkblue;
+    font-weight: 530;
+    border-radius: 20px;
+    padding: 10px 12px 10px 12px;
+    transition: 0.5s
+}
+nav ul div.items a:hover{
+    background-color: darkblue;
+    color: white;
+    
+}
+nav ul .search-icon{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+
+}
+nav ul .search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: darkblue;
+    font-size:16px ;
+    border-radius: 20px;
+}
+
+nav ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    background: #f2f2f2;
+    cursor: pointer;
+    border-radius: 20px;
+}
+nav ul .search-icon .icon:hover{
+    background: #e6e6e6;
+}
+nav ul .search-icon .icon span{
+    color: darkblue;
+    font-size: 18px;
+}
+/* --------------------------------section1--------------------------------------- */
+.main{
+    display: flex;
+    flex-direction: column;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    padding-top: 100px;
+}
+
+.main::before{
+    background: url(/Assets/ebook\ back.webp) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.88;
+    z-index: -1;
+    
+}
+.main h1{
+    font-size: 98px;
+    text-align: left;
+    padding-left: 40px;
+    color: white;
+}
+.head1{
+    padding-top: 180px;
+    
+}
+
+
+/* -----------------------------------------------section2 PRODUCTS ----------------------- */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .product-category {
+    padding: 15rem 10vw 8vw 7vw;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    color: darkblue;
+  }
+  /* <!-- section4 secondary education products  --> starts */
+  .product-category1 {
+    padding: 4rem 10vw 8vw 7vw;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    color: darkblue;
+  }
+
+  /* <!-- section4 secondary education products ends --> */
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: darkblue;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+  }
+  
+  .card-btn {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 70%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+  .card-btn:hover {
+    background: rgb(2, 2, 180);
+    color: #fff;
+  }
+  
+  .product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }
+  
+  .product-brand {
+    text-transform: uppercase;
+  }
+  
+  .product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    margin-top: 13.5rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+  
+  .collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .collection {
+    position: relative;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+  }
+  
+  .collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+  /* ----------------------------------------section3 services------------------------------------- */
+  .service-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap:1.5rem;
+}
+
+.service-container .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.5rem;
+    padding:2rem 0;
+    color: rgba(4, 47, 128, 0.808);
+}
+
+.service-container .service i{
+    font-size: 3.5rem;
+    color:var(--green);
+}
+
+.service-container .service h3{
+    font-size: 1.4rem;
+    color:var(--black);
+    padding-bottom: .5rem;
+    color:rgba(17, 96, 243, 0.808);
+    text-align: center;
+}
+
+.service-container .service p{
+    font-size: 1rem;
+    color:var(--light-color);
+    color:rgba(8, 59, 153, 0.808);
+    text-align: center;
+}
+/* --------------------------------------------section5 book launch------------------------------------- */
+.book-launch{
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 5rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #f2f2f2;
+    justify-content: space-around;
+}
+.launch1{
+    width: 50%; 
+}
+.head{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.head1{
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+}
+.book-launch .details h1{
+    font-size: 18px;
+    margin:10rem 0 0 5rem;
+    font-weight: 550;
+}
+.book-launch .details h3{
+    font-size: 15px;
+    margin:0 0 0 5.9rem;
+    font-weight: 200;
+}
+.date h2{
+    margin: 2rem 0 1rem 5rem;
+}
+.date span{
+    margin: 7rem 0 0 5rem;
+}
+.address span{
+    margin: 7rem 0 0 5rem;
+    font-size: 15px;
+}
+.rsvp{
+    width: 20%;
+    margin: 3rem 0 3rem 5rem;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid darkblue;
+    transition: 0.4s;
+    background-color: white;
+}
+.rsvp:hover{
+    color: #cccccc;
+    background-color:rgb(2, 2, 180) ;
+}
+.launch-image{
+    display: flex;
+    /* align-items: center; */
+    align-items: center;
+    margin-top: 10rem 0 0 5 rem;
+    /* width: 50%; */
+    
+    
+}
+.launch-image img{
+    /* padding: 10px 0 0 5 px; */
+    box-shadow: 10px 10px 10px rgba(58, 58, 58, 0.842);
+    height: 30rem;
+}
+
+/* ----------------------------------------------------section6 footer----------------------------- */
+
+.footer .box-container{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:1rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color:rgba(74, 71, 255, 0.904);
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color:rgba(74, 71, 255, 0.904);
+    padding:1rem 0;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i{
+    color:rgba(24, 24, 243, 0.938);
+    padding-right: .5rem;
+    transition: 0.5s;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .map{
+    width:100%;
+}
+
+.footer .share{
+    padding:1rem 0;
+    text-align: center;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--green);
+    margin:0 .3rem;
+    border-radius: 50%; 
+}
+
+.footer .share a:hover{
+    background:var(--black);
+}
+
+.footer .credit{
+    border-top: var(--border);
+    margin-top: 0.5rem;
+    padding:0 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color:rgba(24, 24, 243, 0.938);
+    text-align: center;
+}
+
+.footer .credit span{
+    color:rgba(24, 24, 243, 0.938);
+}
